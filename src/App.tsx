@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import TaskList from "./components/TaskList";
 import TaskDetails from "./components/TaskDetails";
 import TaskForm from "./components/TaskForm";
