@@ -17,6 +17,12 @@ export const useTaskContext = () => {
   return ctx;
 };
 
+export const useTasks = () => {
+  const context = React.useContext(TaskContext);
+  if (!context) throw new Error("useTasks must be used within a TaskProvider");
+  return context;
+};
+
 export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [tasks, setTasks] = useState<Task[]>([]);
 

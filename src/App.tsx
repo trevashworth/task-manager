@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import TaskList from "./components/TaskList";
 import TaskDetails from "./components/TaskDetails";
 import TaskForm from "./components/TaskForm";
@@ -11,7 +11,7 @@ function App() {
   return (
     <TaskProvider>
       <Router>
-        <Navbar />
+        <NavBar />
         <Container style={{ maxWidth: 650 }}>
           <Routes>
             <Route path="/" element={

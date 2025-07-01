@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
-const AppNavbar: React.FC = () => {
+const NavBar: React.FC = () => {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
   return (
@@ -28,4 +28,4 @@ const AppNavbar: React.FC = () => {
     </Navbar>
   );
 };
-export default AppNavbar;
+export default NavBar;
